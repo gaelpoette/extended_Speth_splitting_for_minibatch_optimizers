@@ -31,4 +31,17 @@ python Adam_fb.py
 # To run eS-Adam with only the aggregator on the gradient BUT with the need to clip the squared component of the gradient
 python eS_Adam.py 
 
+# Applicatins on MNIST are in MNIST
 
+# to run SGD
+python mnist_SGD.py 
+# to run S-Momentum
+python  mnist_SMom.py  
+# to run eS_GD
+python  mnist_eS_GD.py 
+# to run its low memory version
+python  mnist_lm_eS_GD.py 
+# to run eS-Momentum (splitting only with the aggregator, as for Adam)
+python  mnist_eS_Mom.py 
+# to run its low memory version
+python  mnist_lm_eS_Mom.py
