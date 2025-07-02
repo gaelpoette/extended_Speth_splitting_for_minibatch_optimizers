@@ -3,45 +3,45 @@ Code for the numerical experiments of paper entitled
 "NUMERICAL SPLITTING SCHEMES AS THE CORNERSTONE FOR MINI-BATCH OPTIMIZATION: ON THE IMPORTANCE OF WELL-BALANCED METHODS" 
 by Bilel Bensaid, Gaël Poëtte & Rodolphe Turpault
 
-# The 1D test-cases on which the difficulties relative to being interpolating or not are all in 
+## The 1D test-cases on which the difficulties relative to being interpolating or not are all in 
 1D_non_interpolating_benchmarks
 
 #The GD (respectively Momentum and Adam) based mini-batch optimizers are in GD_based (Momentum_based and Adam_based)
 
-# To run RR-GD on the 8 benchmarks of the paper:
+### To run RR-GD on the 8 benchmarks of the paper:
 python rr_gd.py
-# To run eS-GD:
+### To run eS-GD:
 python eS_GD.py
-# To run the low memory version of eS-GD:
+### To run the low memory version of eS-GD:
 python lm_eS_GD.py
-# To run eS-GD with random reshuffle mini-batching (instead of deterministic)
+### To run eS-GD with random reshuffle mini-batching (instead of deterministic)
 python rr_eS_GD.py
 
-# To run S-Momentum
+### To run S-Momentum
 python s_mom.py 
-# To run eS-Momentum with the splitting on the full flow F
+### To run eS-Momentum with the splitting on the full flow F
 python eS_mom_F.py 
-# To run eS-Momentum with only the aggregator on the gradient
+### To run eS-Momentum with only the aggregator on the gradient
 python eS_mom.py 
 
- # To run RR-Adam
+ ### To run RR-Adam
 python Adam.py 
-# To run full batch Adam
+### To run full batch Adam
 python Adam_fb.py 
-# To run eS-Adam with only the aggregator on the gradient BUT with the need to clip the squared component of the gradient
+### To run eS-Adam with only the aggregator on the gradient BUT with the need to clip the squared component of the gradient
 python eS_Adam.py 
 
-# Applicatins on MNIST are in MNIST
+## Applicatins on MNIST are in MNIST
 
-# to run SGD
+### To run SGD
 python mnist_SGD.py 
-# to run S-Momentum
+### To run S-Momentum
 python  mnist_SMom.py  
-# to run eS_GD
+### To run eS_GD
 python  mnist_eS_GD.py 
-# to run its low memory version
+### To run its low memory version
 python  mnist_lm_eS_GD.py 
-# to run eS-Momentum (splitting only with the aggregator, as for Adam)
+### To run eS-Momentum (splitting only with the aggregator, as for Adam)
 python  mnist_eS_Mom.py 
-# to run its low memory version
+### To run its low memory version
 python  mnist_lm_eS_Mom.py
