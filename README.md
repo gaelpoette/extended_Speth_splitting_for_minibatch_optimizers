@@ -31,7 +31,7 @@ python Adam_fb.py
 ### To run eS-Adam with only the aggregator on the gradient BUT with the need to clip the squared component of the gradient
 python eS_Adam.py 
 
-## Applicatins on MNIST are in MNIST
+## Applications on MNIST are in MNIST
 
 ### To run SGD
 python mnist_SGD.py 
